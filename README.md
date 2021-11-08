@@ -6,7 +6,7 @@
 
 |             Train set              |                          Test sets                           |
 | :--------------------------------: | :----------------------------------------------------------: |
-| train_set.csv (LightBBB train set) |               test_set.csv (LightBBB test set)               |
+| train_set.csv (LightBBB train set) | test_set.csv (LightBBB test set) \| test_set_6.csv (B3DB dataset with logBB) |
 |   train_set_2.csv (MoleculeNet)    | test_set.csv (LightBBB test set) \| test_set_combined.csv (LightBBB train_test set) \| test_set_2.csv (LightBBB test set more) \| test_set_3.csv (B3DB dataset) \| test_set_4.csv (B3DB dataset with logBB) \| test_set_5.csv (B3DB dataset with \|logBB\| >=1) |
 
 #### Available trained model: 
@@ -51,3 +51,16 @@ Balanced Random Forest Classifier
 |    Model    |  tp  |  tn  |  fp  |  fn  | accuracy | precision | recall |  f1  | roc_auc | avg_precision |
 | :---------: | :--: | :--: | :--: | :--: | :------: | :-------: | :----: | :--: | :-----: | :-----------: |
 | Balanced RF | 518  |  65  |  34  | 154  |   0.76   |   0.94    |  0.77  | 0.85 |  0.71   |     0.92      |
+
+6. Test_set_5.csv
+
+|    Model    |  tp  |  tn  |  fp  |  fn  | accuracy | precision | recall |  f1  | roc_auc | avg_precision |
+| :---------: | :--: | :--: | :--: | :--: | :------: | :-------: | :----: | :--: | :-----: | :-----------: |
+| Balanced RF |  48  |  65  |  34  |  10  |   0.72   |   0.59    |  0.83  | 0.69 |  0.74   |     0.55      |
+
+7. Test_set_6.csv
+
+|    Model    |  tp  |  tn  |  fp  |  fn  | accuracy | precision | recall |  f1  | roc_auc | avg_precision |
+| :---------: | :--: | :--: | :--: | :--: | :------: | :-------: | :----: | :--: | :-----: | :-----------: |
+| Balanced RF | 179  |  36  |  14  |  84  |   0.69   |   0.93    |  0.68  | 0.79 |  0.70   |     0.90      |
+|  LightBBB   | 156  |  28  |  22  | 107  |   0.59   |   0.88    |  0.59  | 0.71 |  0.58   |     0.86      |
